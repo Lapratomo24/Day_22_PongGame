@@ -25,3 +25,5 @@ class Ball(Turtle):
         self.goto(0, 0)
         self.bounce_paddle()
         # self.write("GAME OVER", align="center")
+
+

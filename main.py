@@ -16,15 +16,15 @@ ball = Ball()
 scoreboard = Scoreboard()
 
 screen.listen()
-screen.onkey(r_paddle.paddle_up, "Up")
-screen.onkey(r_paddle.paddle_down, "Down")
-screen.onkey(l_paddle.paddle_up, "w")
-screen.onkey(l_paddle.paddle_down, "s")
+screen.onkeypress(r_paddle.paddle_up, "Up")
+screen.onkeypress(r_paddle.paddle_down, "Down")
+screen.onkeypress(l_paddle.paddle_up, "w")
+screen.onkeypress(l_paddle.paddle_down, "s")
 
 game_is_on = True
 
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(0.05)
     screen.update()
     ball.move()
 

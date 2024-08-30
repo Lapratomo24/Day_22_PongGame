@@ -7,7 +7,7 @@ class Scoreboard(Turtle):
         self.penup()
         self.color("white")
         self.hideturtle()
-        self.l_score = 1
+        self.l_score = 0
         self.r_score = 0
         self.update_score()
 
@@ -25,4 +25,5 @@ class Scoreboard(Turtle):
     def right_point(self):
         self.r_score += 1
         self.update_score()
+
 
