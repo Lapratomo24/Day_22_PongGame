@@ -21,3 +21,8 @@ class Ball(Turtle):
 
     def bounce_paddle(self):
         self.x_move *= -1
+
+    def switch_direction(self):
+        self.goto(0, 0)
+        self.bounce_paddle()
+        # self.write("GAME OVER", align="center")

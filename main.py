@@ -34,4 +34,13 @@ while game_is_on:
     if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -320:
         ball.bounce_paddle()
 
+    # detect when right paddle misses the ball
+    if ball.xcor() > 400:
+        ball.switch_direction()
+
+    # detect when left paddle misses the ball
+    if ball.xcor() < -400:
+        ball.switch_direction()
+
+
 screen.exitonclick()
